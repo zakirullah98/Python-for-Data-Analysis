@@ -1,0 +1,767 @@
+\documentclass[6pt]{article}
+\usepackage{ctex} 
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{parskip}
+\usepackage{xcolor}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=10mm,
+ right=5mm,
+ }
+
+\begin{document}
+
+\large
+\begin{center}
+\noindent{\bf Class-II, Course Name: Python for Data Analysis }\\
+\vspace{40pt}
+\bf Instructure: Dr.Zakir Ullah(zakirullah98@gmail.com).\\
+\vspace{40pt}
+\noindent{\bf School of Data Science, Capital University of Economics and Business}
+\end       {center}
+
+\vspace{40pt}
+\begin{center}
+
+\bf Final Exam Spring-2023, Date: 02 June 2023, Total marks: 100,  Total Time: 2Hours (18:00-20:00).
+\end{center}
+\vspace{5pt}
+%\medskip\hrule
+\vspace{40pt}
+
+
+\large
+\bf Instructions \\
+\small
+1. Please leave all personl belongings at the front of the classroom, don't  start the exam untill you are told to do so.\\
+2. Talking and looking at other stusents  exam is not allowed, if you need any help please talk to your  instructure.\\
+3. Please attempt all questions Questions and  encircle the correct choice.\\
+\large
+\vspace{20pt}
+
+
+
+
+\noindent{\bf Name:---------------------------------------------------------------------------}\\
+\vspace{20pt}
+
+\noindent{\bf Student ID:--------------------------------------------------------------------- }\\
+\vspace{20pt}
+
+\noindent{\bf Date:----------------------------------------------------------------------------  }\\
+
+\vspace{300pt}
+
+1. 定义函数时，函数名之后的一对小括号中给出的参数是\\
+
+\begin{flushleft}
+A. 实参  \\
+B. 名字参数  \\
+C. 形参  \\
+D. 类型参数\\
+\end{flushleft}
+
+
+2. 以下程序的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+class D:
+    def __init__(self, w=40):
+        self.__a=w+30
+    def __show(self):
+        print(self.__a)
+    def show_private(self):
+        self.__show()
+obj=D(20)
+obj.show_private()
+\end{lstlisting}
+
+A. 30\\
+B. 20\\
+\textcolor{red}{C. 50}\\
+D. 70\\
+
+3. 以下语句的运行结果为\\
+
+\begin{lstlisting}[language=Python]
+result=lambda a:pow(2, a)
+result(5)
+\end{lstlisting}
+A. 报错\\
+B. 10\\
+\textcolor{red}{C. 32}\\
+D. 25\\
+
+4. Which of the following are the child classes in the code given below?\\
+\begin{lstlisting}[language=Python]
+clas s A:
+	pass
+clas s B(A) :
+	pass
+clas s C(B) :
+	pass
+\end{lstlisting}
+A. A \\
+B. A, B\\
+\textcolor{red}{C. B, C}\\
+D. A, C\\
+
+5. 以下表达式输出结果为11的是：\\
+
+A. print(“1+1”)\\
+B. print(1+1)\\
+C. print(eval(“1=1”))\\
+\textcolor{red}{D. print(eval(“1”+”1”))}\\
+
+6. 以下查看Pandas的DataFrame实例对象a的属性信息的正确方法是：\\
+
+A. a.help\\
+B. a.dtypes\\
+C. a.head\\
+D. a.info\\
+
+7. 下列不是ndarray属性的是\\
+
+A. ndim\\
+B. size\\
+C. shape\\
+\textcolor{red}{D. reshape}\\
+
+8. 静态方法一般用来标识\\
+
+A. @staticmethod\\
+B. staticmethod\\
+C. @classmehtod\\
+D. classmethod\\
+
+9. 如果函数没有使用return语句，则函数返回的是\\
+
+A. 0\\
+		\textcolor{red}{B. None}\\
+C. 任意整数\\
+D. 报错！函数必须要有返回值。\\
+
+10. a为类A的实例对象且包含一个私有属性\_\_value，在类外部能将对象a的该私有属性值修改为3的语句是：\\
+
+A. a.\_\_value=3\\
+\textcolor{red}{B. a.\_A\_\_value=3}\\
+C. A.\_a\_\_value=3\\
+D. A.\_\_value=3\\
+
+11. 以下不能创建一个字典的语句是\\
+
+A. dic1=\{\}\\
+B. dic2=\{123:345\}\\
+\textcolor{red}{C. dic3=\{[1, 2, 3]:’uestc’\}}\\
+D. dic3=\{(1, 2, 3):’uestc’\}\\
+
+12. 以下语句的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+x=[1, 2, 3]
+x[1:]=[2]
+print(x) 
+\end{lstlisting}
+A. [1, 2, 2]\\
+\textcolor{red}{B. [1, 2]}\\
+C. [1, 2, 3]\\
+D. [2, 2, 2]\\
+
+13. 下列哪种类型数据不是Python3中的数据类型\\
+
+A. int\\
+B. float\\
+C. complex\\
+\textcolor{red}{D. long}\\
+
+14. 下列哪项不是Python的标准库？\\
+
+A. statistics\\
+B. os\\
+C. random\\
+\textcolor{red}{D. numpy}\\
+
+
+15. 以下语句的运行结果为\\
+
+\begin{lstlisting}[language=Python]
+n1=[1, 2, 3]
+n2=list('python')
+n1+n2
+\end{lstlisting}
+\textcolor{red}{A. [1, 2, 3, 'p', 'y', 't', 'h', 'o', 'n']}\\
+B. [1, 2, 3, ’python’]\\
+C. ['1p', '2y', '3t', 'h', 'o', 'n']\\
+D. 报错\\
+
+16. 以下关于函数的哪个描述是最正确的？\\
+
+A. 函数用于创建对象和方法\\
+B. 函数可以让代码执行得更快\\
+C. 函数是一段用于执行特定任务的代码\\
+D. 以上说法都是正确的\\
+
+17. print(type(16/4))的结果为\\
+
+A. int\\
+	\textcolor{red}{B. float}\\
+C. str\\
+D. bool\\
+
+18.  若 a= [1, 2, 3,"python"]+[0, (1, 2, 4, 36, 8)], print(len(a)) 的结果为\\
+
+\textcolor{red}{A. 6}\\
+B. 15\\
+C. 4\\
+D. 11\\
+
+19. 以下语句的输出结果为\\
+\begin{lstlisting}[language=Python]
+nums=set([1, 1, 2, 3, 3, 3, 4])
+len(nums)
+\end{lstlisting}
+A. 1  \\
+B. 2\\
+\textcolor{red}{C. 4}\\
+D. 5\\
+
+20. 以下程序运行结果是\\
+
+\begin{lstlisting}[language=Python]
+b=[2, 4, 5, 7]
+a=list(filter(lambda x:x\%2, b))
+print(a)
+\end{lstlisting}
+A. [2, 4]\\
+B. []\\
+	\textcolor{red}{C. [5, 7]}\\
+D. 报错\\
+
+21. 程序设计的三种基本控制结构不包括\\
+
+A. 递归\\
+B. 循环\\
+C. 条件或选择\\
+D. 顺序\\
+
+22. 以下程序的运行结果为：\\
+
+(1, 2, 3).append(4)\\
+A. (1, 2, 3, 4)\\
+B. (1, 2, 3)\\
+C. (4, 1, 2, 3)\\
+	\textcolor{red}{D. 报错}\\
+
+23. 以下语句的执行结果为：\\
+\begin{lstlisting}[language=Python]
+d = {'Name':'Li', 'Age':23, 2022:'Year'}
+'Year' in d
+\end{lstlisting}
+A. True\\
+\textcolor{red}{B. False}\\
+C. None\\
+D. 2022\\
+
+24. 以下语句的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+import numpy as np
+a=b=np.array([1, 2, 3, 4]).reshape(2, 2)
+np.vstack((a, b)).shape
+\end{lstlisting}
+A. (2, 4)\\
+\textcolor{red}{B. (4, 2)}\\
+C. (2, 2)\\
+D. (4, 4)\\
+
+25. 下面哪些特征不是面向对象程序设计的主要特征\\
+
+A. 封装\\
+B. 函数\\
+C. 多态\\
+D. 继承\\
+
+26. What is the output of the following code?\\
+\begin{lstlisting}[language=Python]
+def func(a, b=20, c=12):\\
+print(a, b, c)\\
+func(11, 33)\\
+\end{lstlisting}
+A. 11, 20, 12\\
+B. 11, 33\\
+\textcolor{red}{C. 11, 33, 12}\\
+D. 11, 20, 33\\
+
+27. 关于字典的描述，错误的是\\
+
+A. 字典长度是可变的\\
+B. 字典是键值对的集合\\
+C. 字典中的键可以对应多个值信息\\
+D. 字典中元素以键信息为索引访问\\
+
+28. 关于Python全局对象和局部对象，下列说法错误的是\\
+
+A. 全局对象不能和局部对象重名\\
+B. 非局部对象不一定是全局对象\\
+C. 全局对象在程序执行的全过程有效\\
+D. 局部对象仅在特定代码范围中有效\\
+
+29. 以下程序运行结果是\\
+
+\begin{lstlisting}[language=Python]
+def add_more(l): 
+    l.append(66)   
+mylist = [1, 33, 44] 
+print(add_more(mylist))
+\end{lstlisting}
+A.	1, 33, 44\\
+B.	1, 33, 66\\
+\textcolor{red}{C.1, 33, 44, 66}\\
+D.	None of the above\\
+
+30.   若 s= \{7, 8, 9, 10, 10, 8\} ，则print(len(s*3)) 的结果是？\\
+
+A.	18   \\
+B.	6    \\
+C.	12     \\
+\textcolor{red}{D.	报错}\\
+
+31. 类中定义的函数被称为.\\
+
+A.	Class function\\
+\textcolor{red}{B.	method}\\
+C.	public function\\
+D.	None of the above\\
+
+32. 下列关于Python基本输入输出函数的描述，错误的是.\\
+
+A. eval函数的参数是”3*4”的时候，返回的值是整数”12”\\
+B. print函数的参数可以是一个函数，执行结果是显示函数返回的值\\
+C. 当print函数输出多个对象的时候，可以用逗号分割多个对象名\\
+D. 当用户输入一个整数666的时候，input函数返回的也是整数666\\
+
+
+33. 以下程序运行结果是90的是\\
+
+\textcolor{red}{A. (x:=100)-10}\\
+B. x:=100-10\\
+C. (x=100)-10\\
+D. x==100-10\\
+
+34. 以下语句的执行结果是\\
+
+7+6*5**4/2-1\\
+A. 4005006\\
+B. 156\\
+C. 906\\
+\textcolor{red}{D. 1881}\\
+
+35. 以下语句的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+def foo(x):
+	if x==1:
+		return 1
+	else:
+  		return x+foo(x-1)
+foo(5)
+\end{lstlisting}
+\textcolor{red}{A. 15}\\
+B. 10\\
+C. 5\\
+D. 0\\
+
+36. Python是一种\\
+
+A. 面向对象的编译型\\
+B. 面向过程的解释型\\
+C. 面向对象的解释型\\
+D. 面向过程的编译型\\
+
+37. Python在声明类的过程中定义属性时，带有的属性可以视为私有属性，但实际不是。\\
+
+A. 2个下划线的前缀\\
+B. 1个下划线的前缀\\
+C. 2个下划线的后缀\\
+D. 1个下划线的后缀\\
+
+38. 以下关于pass语句的哪个描述是正确的？\\
+
+A. Python会忽略pass语句，就像忽略注释一样\\
+B. pass语句会终止当前循环\\
+C. pass不做任何事情，一般用做占位语句\\
+D. 以上说法都是正确的\\
+
+39. python中下列哪种标识符代表类的私有成员\\
+
+A. \_\_foo\_\_\\
+B. \_foo\\
+\textcolor{red}{C. \_\_foo}\\
+D. foo\_\_\\
+
+40. 闰年的判定条件是能被400整除，或者能被4整除但不能被100整除，正确的Python表达式是\\
+
+\textcolor{red}{A. year\%400==0 and year\%4==0 and year\%100!=0} \\
+B. (year//400==0)or(year//4==0and year//100!=0)\\
+C. (year\%400==0)or(year\%4==0 and year \%100!=0) \\
+D. Year//400==0 or year//4==0 and year//100!=0 \\
+
+41. 类方法的第一个参数对应\\
+
+A. 第一个实参\\
+B. 实例本身\\
+C. 类本身\\
+D. 方法本身\\
+
+42. 以下语句的运行结果为
+
+\begin{lstlisting}[language=Python]
+[y1+y2 for y1, y2 in zip([1, 2], [3, 4])]
+\end{lstlisting}
+\textcolor{red}{A. [4, 6]}\\
+B. [3, 7]\\
+C. [1, 2, 3, 4]\\
+D. 报错\\
+
+43. 命名的不定参数在传递给函数时被封装为\\
+
+A. 列表\\
+B. 集合\\
+C. 元组\\
+D. 字典\\
+
+44. 下列关于pandas中DataFrame实例对象的说法，正确的是\\
+
+A. DataFrame是二维带索引的数组，索引可自定义\\
+B. DataFrame与二维ndarray类型在数据运算上方法一致\\
+C. DataFrame只能表示二维数据\\
+D. DataFrame由2个Series组成\\
+
+45. 下列程序可用于查看实例对象a的成员的是\\
+
+A. help(a)\\
+B. print(a)\\
+\textcolor{red}{C. dir(a)}\\
+D. a?\\
+
+46. 以下程序的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+if None: print("Hello!")
+\end{lstlisting}
+A. None\\
+B. ‘Hello’\\
+\textcolor{red}{C. 无任何输出}\\
+D. 报错\\
+
+47. 下列选项中不能用于Python对象名称的是：\\
+
+A. 你好\\
+B. \_asdf\\
+\textcolor{red}{C. 001\_asdf}\\
+D. asdf\\
+
+48. 以下程序的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+class Test:
+    def __init__(self):
+        self.var='old'
+        self.change(self.var)
+    def change(sel, v):
+        v='new'
+obj=Test()
+obj.var
+\end{lstlisting}
+
+A. 程序错误\\
+B. new\\
+\textcolor{red}{C. old}\\
+D. 无输出\\
+
+49. 下列语句可以创建一个[0, 10]之间，长度为16的等差数列的是\\
+
+A. np.linspace(0, 16, 10)\\
+\textcolor{red}{B. np.linspace(0,10,16)}\\
+C. np.logspace(0, 10, 16)\\
+D. np.randint(0, 16, 10）\\
+
+50. 以下语句的运行结果为：\\
+
+\begin{lstlisting}[language=Python]
+i=sum=0
+while i<4:
+   sum+=i
+   i+=1
+print(sum)
+\end{lstlisting}
+A. 0\\
+B. 10\\
+\textcolor{red}{C. 6}\\
+D. 以上结果均不正确\\
+
+51. 以下程序的运行结果是\\
+
+\begin{lstlisting}[language=Python]
+a=(1, 2, ['1, 2'])
+a[2].append(3)
+\end{lstlisting}
+
+A. (1, 2, ['1, 2', '3'])\\
+B. \textcolor{red}{(1, 2, ['1, 2', 3])}\\
+C. [1, 2, ['1, 2', 3]]\\
+D. 报错\\
+
+52. 给Numpy数组中的一个元素分配一个错误类型的值会导致错误.\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+53. 隐式继承就是指父类能够自动获得子类的全部成员。\\
+
+A. 对\\
+B. 错\\
+
+54. 注释的作用只是增强程序的可读性，不会实际运行。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+55. 元组是一个有序的、不可改变的集合，可以有重复的成员.\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+56. a、b均为长度相同的列表，其中每个元素均为int数值，当进行a+b操作时，会对a中每个元素都加上b中对应位置元素的值。\\
+
+A. 对\\
+\textcolor{red}{B. 错}\\
+
+57. 对列表使用sort方法，默认是升序排列\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+58. 使用关键字参数可以进行Python函数的乱序传参。\\
+
+A. 对\\
+B. 错\\
+
+59. Python标准库不需要使用import语句导入即可直接使用其中的所有对象。\\
+
+A. 对\\
+B. 错\\
+
+60. 凡是用花括号（即\{\}）括起来中间用逗号隔开元素的数据结构都叫字典。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+61. Python中可以基于多个已有的类创建新类\\
+
+A. 对\\
+B. 错\\
+
+62. 元组可用于异构数据元素的存储。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+63. (1, 2, 3)可作为字典的键。\\
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+64. 函数体内部的语句在执行时，一旦执行到return时，函数就执行完毕并将结果返回。\\
+
+A. 对\\
+B. 错\\
+
+65. 类方法不需要以self作为第一个参数。\\
+A. 对\\
+B. 错\\
+
+66. 当自定义了DataFrame的行或者列索引时，就只能按照自定义索引来索引或切片。\\
+
+A. 对\\
+B. 错\\
+
+67. Python列表的索引是从1开始的。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+68. 在Python 3.x中可以使用中文作为对象名称。\\
+
+A. 对\\
+B. 错\\
+
+69. Python 中的几乎所有东西都是对象，拥有属性和方法.\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+70. lambda所定义的匿名函数中可以编写多个表达式，表达式之间需使用逗号隔开。\\
+
+A. 对\\
+B. 错\\
+
+71. not是一个身份运算符。\\
+
+A. 对\\
+B. 错\\
+
+72. Python列表中所有的元素必须是相同的数据类型。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+73. Python的字符串是不可变数据类型。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+74. 由唯一元素构成的序列称之为集合set。\\
+
+A. 对\\
+B. 错\\
+
+75. NaN是Python中的默认缺失值。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+76. 函数内部无法定义全局对象。\\
+
+A. 对\\
+B. 错\\
+
+77. 我们不能用一个关键词作为变量名、函数名或任何其他标识符。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+78. NumPy数组是异质性的，可以包含不同类型的对象。\\
+
+A. 对\\
+\textcolor{red}{B. 错}\\
+
+79. while循环中的else语体总会被执行。\\
+
+A. 对\\
+B. 错\\
+
+80. 如安装有matplotlib包，可以使用matplotlib.plot语句来绘制图形。\\
+
+A. 对\\
+B. 错\\
+
+81. 对于与循环语句匹配的else语句，如果循环代码从break处终止，则执行该循环的else语句。\\
+
+A. 对\\
+B. 错\\
+
+82. Python中的for循环可以遍历任何可迭代对象。\\
+
+A. 对\\
+B. 错\\
+
+83. 定义函数只是规定了函数会执行什么操作，但并不会真正执行；只有调用函数时才会真正去执行函数中的代码。\\
+
+A. 对\\
+B. 错\\
+
+84. del语句可删除任何对象。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+85. Python代码只有一种注释方式，那就是使用\#。\\
+
+A. 对\\
+B. 错\\
+
+86. 花括号\{\}在Python中用于创建一个空集。\\
+
+A. 对\\
+B. 错\\
+
+87. 使用@staticmethod装饰器修饰的方法称之为类方法。\\
+
+A. 对\\
+\textcolor{red}{B. 错}\\
+
+88. import module1, module2, module3,可以一次性导入module1, module2, module3,这三个模块。\\
+
+A. 对\\
+B. 错\\
+
+89. 当父类方法的功能不能满足需求时，可以在子类中重写父类的方法，该过程称之为方法重载。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+90. 3+4j不是合法的Python表达式。\\
+
+A. 对\\
+B. 错\\
+
+91. Python中类的特性能够实现利用属性来控制或调用方法。\\
+
+A. 对\\
+B. 错\\
+
+92. Python使用缩进来体现代码之间的逻辑关系，对缩进的要求非常严格。\\
+
+\textcolor{red}{A. 对}\\
+B. 错\\
+
+93. 可迭代对象就是迭代器。\\
+
+A. 对\\
+B. 错\\
+
+94. 对于Python的私有成员而言，类本身和子类均可以访问它。\\
+
+A. 对\\
+\textcolor{red}{B. 错}\\
+
+95. 全局变量不能在函数体内直接被赋值。\\
+
+A. 对\\
+B. 错\\
+
+96. 函数必须要有return语句。\\
+
+A. 对\\
+\textcolor{red}{B. 错}\\
+
+97. 装饰器可以用闭包函数的特性来实现。\\
+
+A. 对\\
+B. 错\\
+
+98. 下列代码是否可以正常工作。\\
+\begin{lstlisting}[language=Python]
+lf=lambda x:  return x**2
+lf(4)
+\end{lstlisting}
+
+A. 可以\\
+\textcolor{red}{B. 不可以}\\
+
+99. map函数将传入的函数依次作用到序列中的每一个元素，并把结果作为新的迭代器返回。\\
+
+A. 对\\
+B. 错\\
+
+100. lambda匿名函数可以返回多个表达式的值。\\
+
+A. 对\\
+B. 错
+
+\end{document}
