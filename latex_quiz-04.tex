@@ -1,0 +1,132 @@
+\documentclass[6pt]{article}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ top=10mm,
+ right=10mm,
+ }
+
+\begin{document}
+
+\large
+\begin{center}
+\noindent{\bf Name: ................SID: .................  Class-II, Quiz\#04 , Date: 24 May 2023}
+\end       {center}
+\small
+\vspace{10pt}
+\begin{center}
+\bf Total marks: 10 (One for each Question), Total Time: 15 Minutes.
+\end{center}
+\vspace{5pt}
+\medskip\hrule
+\vspace{20pt}
+\large
+ 1. The correct way to instantiate(create object) the following Dog class is:
+\vspace{20pt}
+\begin{center}
+\begin{lstlisting}[language=Python]
+	class Dog:
+	    def__init__(self, name, age):
+	        self.name = name
+	        self.age = age
+\end{lstlisting}
+\end{center}
+\vspace{20pt}
+
+(A) Dog("Rufus", 3)         (B) Dog.\_\_init\_\_("Rufus", 3)          (C)  Dog()           (D) Dog.create("Rufus", 3)
+
+\vspace{20pt}
+ 2. In Python, a function within a class definition is called a:
+\vspace{20pt}
+
+(A) a method           (B) an operation           (C)  a callable       (D) a factory
+
+\vspace{20pt}
+
+ 3. In which of the following does the Dog class correctly inherit from the Animal class?
+\vspace{20pt}
+
+(A) from Dog import Animal (B) class Dog(Animal) (C) an = Animal() (D) Dog = Animal()
+\vspace{20pt}
+
+ 4.  Which of the following does not correctly create an object instance?
+\vspace{20pt}
+
+(A) obj = Cat("Jamie")    (B) cat = Cat("Jamie")   (C)       jamie = Cat()    (D)  pupper = new Cat("Jamie")
+
+\vspace{20pt}
+5. What does the following code output?
+\begin{center}
+\begin{lstlisting}[language=Python]
+	class People():		
+	    def __init__(self, name):
+	    		self.name = name
+	
+	    def namePrint(self):
+	      		print(self.name)
+	
+	person1 = People("Sally")
+	person2 = People("Louise")
+	person1.namePrint()
+\end{lstlisting}
+\end{center}
+\vspace{20pt}
+
+(A)  Sally         (B)  Louise        (C)     Sally Louise     (D)  person1
+
+\vspace{20pt}
+
+6. Which of the following is the correct way to define an initializer method?
+\vspace{20pt}
+
+(A) def \_\_init\_\_(title, author): (B) def \_\_init\_\_(self, title, author): (C) def \_\_init\_\_(): (D) \_\_init\_\_(self, title, author):
+
+\vspace{20pt}
+7. Which of the following is the parent class in the code given below?
+\begin{center}
+\begin{lstlisting}[language=Python]
+	class A:
+	
+	    pass 
+	
+	class B(A):
+	
+	    pass 
+	
+	class C(B):
+	
+	    pass
+   \end{lstlisting}
+\end{center} 
+\vspace{20pt}
+
+(A) Class A   (B)  Class B   (C) Class C.   (D) Both A and B.
+
+\vspace{20pt}
+8.  Every class must have a constructor.
+\vspace{20pt}
+
+(A) True (B) False
+
+\vspace{20pt}
+
+
+(9). ........................: "Hiding" properties and methods of a class from the "outside world" by making these private.
+\vspace{20pt}
+
+(A) Inheritance   (B)  Polymorphism   (C) Abstraction   (D) Encapsulation.
+
+
+\vspace{20pt}
+10. A private method or property cannot be accessed from outside the class.
+\vspace{20pt}
+
+(A) True (B) False
+
+\end{document}
